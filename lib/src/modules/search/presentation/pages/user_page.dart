@@ -20,9 +20,12 @@ class _UserPageState extends State<UserPage> {
       body: Center(
         child: Column(
           children: [
-            CircleAvatar(
-              backgroundImage: NetworkImage(widget.user.avatarUrl),
-              radius: 100.0,
+            Hero(
+              tag: widget.user.id,
+              child: CircleAvatar(
+                backgroundImage: NetworkImage(widget.user.avatarUrl),
+                radius: 100.0,
+              ),
             ),
             const SizedBox(height: 12.0),
             Text(

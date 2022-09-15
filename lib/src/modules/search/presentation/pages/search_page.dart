@@ -41,9 +41,12 @@ class _SearchPageState extends State<SearchPage> {
                             '/user',
                             arguments: users[index],
                           ),
-                          leading: CircleAvatar(
-                            backgroundImage:
-                                NetworkImage(users[index].avatarUrl),
+                          leading: Hero(
+                            tag: users[index].id,
+                            child: CircleAvatar(
+                              backgroundImage:
+                                  NetworkImage(users[index].avatarUrl),
+                            ),
                           ),
                           title: Text(users[index].name),
                         );
