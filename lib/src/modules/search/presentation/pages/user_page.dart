@@ -23,7 +23,11 @@ class _UserPageState extends State<UserPage> {
             CircleAvatar(
               backgroundImage: NetworkImage(widget.user.avatarUrl),
               radius: 100.0,
-            )
+            ),
+            Text(
+              widget.user.name,
+              style: const TextStyle(fontSize: 30.0),
+            ),
           ],
         ),
       ),
