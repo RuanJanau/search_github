@@ -24,6 +24,7 @@ class _UserPageState extends State<UserPage> {
               backgroundImage: NetworkImage(widget.user.avatarUrl),
               radius: 100.0,
             ),
+            const SizedBox(height: 12.0),
             Text(
               widget.user.name,
               style: const TextStyle(
