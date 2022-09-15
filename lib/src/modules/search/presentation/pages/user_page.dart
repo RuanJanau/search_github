@@ -16,7 +16,12 @@ class _UserPageState extends State<UserPage> {
       appBar: AppBar(),
       body: Center(
         child: Column(
-          children: const [CircleAvatar()],
+          children: [
+            CircleAvatar(
+              backgroundImage: NetworkImage(widget.user.avatarUrl),
+              radius: 100.0,
+            )
+          ],
         ),
       ),
     );
