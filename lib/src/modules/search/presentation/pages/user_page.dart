@@ -26,7 +26,10 @@ class _UserPageState extends State<UserPage> {
             ),
             Text(
               widget.user.name,
-              style: const TextStyle(fontSize: 30.0),
+              style: const TextStyle(
+                fontSize: 30.0,
+                fontWeight: FontWeight.bold,
+              ),
             ),
           ],
         ),
