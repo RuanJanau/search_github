@@ -20,6 +20,11 @@ class _SearchPageState extends State<SearchPage> {
         child: Column(
           children: [
             const SizedBox(height: 40.0),
+            const Text(
+              'Pesquisar Usuários',
+              style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 10.0),
             TextFormField(
               onFieldSubmitted: (value) => controller.showUsers(value),
               decoration: const InputDecoration(
